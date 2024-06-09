@@ -1,6 +1,0 @@
-import yfinance as yf
-
-sp500 = yf.Tricker("^GSPC")
-sp500 = sp500.history(period="max")
-
-sp500
