@@ -1,10 +1,10 @@
 import yfinance as yf # imports package to download sp500 data
-import pandas
+import pandas as pd # imports package to manipulate data
 
 '''
 Access the price history and query it to show all the history since the start of the sp500 index.
 '''
-sp500 = yf.Tricker("^GSPC") 
+sp500 = yf.Ticker("^GSPC") 
 sp500 = sp500.history(period="max")
 sp500
 sp500.index
